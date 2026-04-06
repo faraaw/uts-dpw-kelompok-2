@@ -1,0 +1,156 @@
+body {
+  background-color: #fff;
+}
+
+.section-berita {
+  padding: 60px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  border-top: 3px solid #b91c1c;
+}
+.section-berita h2 {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: #7a0c0c;
+}
+
+.section-berita .subtitle {
+  color: #b91c1c;
+  font-size: 0.95rem;
+}
+
+.berita-card {
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  height: 360px;
+}
+
+.berita-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.berita-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,245,245,0.95);
+  padding: 14px 16px;
+  border-radius: 0 0 14px 14px;
+}
+
+.berita-overlay h6 {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #7a0c0c;
+}
+
+.berita-overlay .meta {
+  font-size: 0.75rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.berita-overlay .meta .tanggal {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.berita-overlay p {
+  font-size: 0.78rem;
+  color: #444;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-selengkapnya {
+  background-color: #b91c1c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  padding: 6px 14px;
+  white-space: nowrap;
+}
+
+.btn-selengkapnya:hover {
+  background-color: #7a0c0c;
+  color: #fff;
+}
+
+.btn-lihat-lainnya {
+  background-color: #b91c1c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.btn-lihat-lainnya:hover {
+  background-color: #7a0c0c;
+  color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #f0caca;
+  opacity: 1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.carousel-control-prev { left: -15px; }
+.carousel-control-next { right: -15px; }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(13%) sepia(92%) saturate(3000%) hue-rotate(350deg) brightness(90%) contrast(95%);
+  width: 16px;
+  height: 16px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fca5a5;
+  border: none;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #b91c1c;
+}
+
+.side-card {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+  .berita-card {
+    height: 280px;
+  }
+
+  .carousel-control-prev { left: 0; }
+  .carousel-control-next { right: 0; }
+}
