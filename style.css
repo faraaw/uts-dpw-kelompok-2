@@ -215,7 +215,7 @@ body {
 }
 
 .banner-image {
-    background-image: url('icons/gedung-c.png');
+    background-image: url('icons/gedung-c.webp');
     width: 100%;
     position: relative;
     overflow: hidden;
