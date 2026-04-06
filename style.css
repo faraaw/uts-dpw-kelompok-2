@@ -1,0 +1,230 @@
+body {
+  background-color: #fff;
+}
+
+.section-berita {
+  padding: 60px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  border-top: 3px solid #b91c1c;
+}
+
+.section-berita h2 {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: #7a0c0c;
+}
+
+.section-berita .subtitle {
+  color: #b91c1c;
+  font-size: 0.95rem;
+}
+
+.berita-card {
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  height: 360px;
+}
+
+.berita-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.berita-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 245, 245, 0.95);
+  padding: 14px 16px;
+  border-radius: 0 0 14px 14px;
+}
+
+.berita-overlay h6 {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #7a0c0c;
+}
+
+.berita-overlay .meta {
+  font-size: 0.75rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.berita-overlay .meta .tanggal {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.berita-overlay p {
+  font-size: 0.78rem;
+  color: #444;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-selengkapnya {
+  background-color: #b91c1c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  padding: 6px 14px;
+  white-space: nowrap;
+}
+
+.btn-selengkapnya:hover {
+  background-color: #7a0c0c;
+  color: #fff;
+}
+
+.btn-lihat-lainnya {
+  background-color: #b91c1c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.btn-lihat-lainnya:hover {
+  background-color: #7a0c0c;
+  color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #f0caca;
+  opacity: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-control-prev {
+  left: -15px;
+}
+
+.carousel-control-next {
+  right: -15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(13%) sepia(92%) saturate(3000%) hue-rotate(350deg) brightness(90%) contrast(95%);
+  width: 16px;
+  height: 16px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fca5a5;
+  border: none;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #b91c1c;
+}
+
+.side-card {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+  .berita-card {
+    height: 280px;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+}
+
+.bg-lighter {
+  background-color: #f8f9fa !important;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding: 80px 0;
+}
+
+.partner-title {
+  font-weight: 700;
+  color: #212529;
+  border-left: 5px solid #8D1E20;
+  padding-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.partner-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.partner-wrapper:hover {
+  border-color: #8D1E20;
+  background-color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+}
+
+.partner-logo {
+  max-height: 80px;
+  max-width: 90%;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  object-fit: contain;
+}
+
+.partner-wrapper:hover .partner-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.banner-image {
+    background-image: url('icons/gedung-c.png');
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 18 / 10;
+    background-size: cover;
+    background-position: center center; /* Sesuaikan posisi agar arsitektur & robot terlihat bagus */
+    background-repeat: no-repeat;
+    
+    /* Hapus filter gelap & neon */
+    filter: none; 
+    border-bottom: 4px solid var(--unri-red); /* Beri garis merah UNRI tegas di bawah */
+}

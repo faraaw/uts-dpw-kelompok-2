@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FT UNRI - Header, Berita, Partners, Footer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="icons/logounri.PNG"
+          height="40"
+          alt="Logo FT"
+          style="margin-right: 10px;"
+        />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarRightAlignExample"
+        aria-controls="navbarRightAlignExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase fw-semibold" style="font-size: 0.9rem;">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Akademik</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">SDM</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">PPID</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">K3L</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">SPM</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kerjasama</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gambar -->
+  <section class="hero-banner container-fluid p-0">
+        <div class="banner-image"></div>
+    </section>
+
+
+  <!-- BERITA -->
+  <div class="section-berita shadow-sm px-4">
+
+    <div class="text-center mb-4">
+      <h2>Berita Terbaru</h2>
+      <p class="subtitle">Berita terkini di Fakultas Teknik Universitas Riau</p>
+    </div>
+
+    <div id="carouselBerita" class="carousel slide position-relative px-3" data-bs-ride="carousel">
+
+      <div class="carousel-indicators" style="bottom: -36px;">
+        <button type="button" data-bs-target="#carouselBerita" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselBerita" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselBerita" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row g-3 align-items-center">
+            <div class="col-3 d-none d-md-block">
+              <div class="berita-card side-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Samping">
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="berita-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Utama">
+                <div class="berita-overlay">
+                  <h6>FT UNRI Gelar Seminar Nasional Teknologi Berkelanjutan 2026</h6>
+                  <div class="meta">
+                    <i class="bi bi-calendar3"></i>
+                    <span class="tanggal">12 Februari 2026</span>
+                    <span>|</span>
+                    <span>Humas FT</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-end gap-2">
+                    <p>Fakultas Teknik Universitas Riau menyelenggarakan seminar nasional yang menghadirkan pakar teknologi untuk membahas inovasi berkelanjutan...</p>
+                    <button class="btn btn-selengkapnya">Selengkapnya</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 d-none d-md-block">
+              <div class="berita-card side-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Samping">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-3 align-items-center">
+            <div class="col-3 d-none d-md-block">
+              <div class="berita-card side-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Samping">
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="berita-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Utama">
+                <div class="berita-overlay">
+                  <h6>Mahasiswa FT UNRI Raih Juara 1 Kompetisi Robotika Nasional</h6>
+                  <div class="meta">
+                    <i class="bi bi-calendar3"></i>
+                    <span class="tanggal">5 Februari 2026</span>
+                    <span>|</span>
+                    <span>Humas FT</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-end gap-2">
+                    <p>Tim mahasiswa Fakultas Teknik berhasil meraih juara pertama dalam ajang robotika tingkat nasional berkat inovasi sistem otomatisasi...</p>
+                    <button class="btn btn-selengkapnya">Selengkapnya</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 d-none d-md-block">
+              <div class="berita-card side-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Samping">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-3 align-items-center">
+            <div class="col-3 d-none d-md-block">
+              <div class="berita-card side-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Samping">
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="berita-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Utama">
+                <div class="berita-overlay">
+                  <h6>FT UNRI Jalin Kerja Sama Industri dengan Perusahaan Energi Nasional</h6>
+                  <div class="meta">
+                    <i class="bi bi-calendar3"></i>
+                    <span class="tanggal">2 Februari 2026</span>
+                    <span>|</span>
+                    <span>Humas FT</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-end gap-2">
+                    <p>Kerja sama ini bertujuan meningkatkan kualitas lulusan melalui program magang, riset bersama, dan pengembangan teknologi energi...</p>
+                    <button class="btn btn-selengkapnya">Selengkapnya</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 d-none d-md-block">
+              <div class="berita-card side-card">
+                <img src="icons/ft_unri.jpeg" alt="Berita Samping">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev d-flex align-items-center justify-content-center" type="button" data-bs-target="#carouselBerita" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next d-flex align-items-center justify-content-center" type="button" data-bs-target="#carouselBerita" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <button class="btn btn-lihat-lainnya">Lihat Berita Lainnya</button>
+    </div>
+
+  </div>
+
+  <!-- PARTNERS -->
+  <section class="py-5 bg-lighter">
+    <div class="container">
+      <h2 class="partner-title mb-5">PARTNERS</h2>
+      <div class="row row-cols-2 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="partner-wrapper">
+            <img src="icons/telkomsel-seeklogo.svg" class="partner-logo img-fluid" alt="Daehan">
+          </div>
+        </div>
+        <div class="col">
+          <div class="partner-wrapper">
+            <img src="icons/telkomsel-seeklogo.svg" class="partner-logo img-fluid" alt="USU">
+          </div>
+        </div>
+        <div class="col">
+          <div class="partner-wrapper">
+            <img src="icons/telkomsel-seeklogo.svg" class="partner-logo img-fluid" alt="Telkom">
+          </div>
+        </div>
+        <div class="col">
+          <div class="partner-wrapper">
+            <img src="icons/telkomsel-seeklogo.svg" class="partner-logo img-fluid" alt="PLN">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-lg-start bg-dark text-white">
+    <section class="container text-center text-md-start pt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="mb-3">
+            <img src="icons/logoftunri.png" alt="Logo FT UNRI" class="img-fluid" style="max-height: 80px; width: auto;">
+          </div>
+          <p class="text-white">
+            Menjadi Fakultas Teknik yang Unggul, Bermartabat, Berbasis Riset, dan Teknologi di Kawasan Asia Tenggara.
+          </p>
+          <a href="https://www.facebook.com/fakultasteknikunri" class="me-4 text-white fs-5">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://twitter.com/ft_unri" class="me-4 text-white fs-5">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://www.instagram.com/ft_unri" class="me-4 text-white fs-5">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 text-white">
+            Direktori Web
+          </h6>
+          <p><a href="https://unri.ac.id" class="text-white text-decoration-none">UNRI</a></p>
+          <p><a href="https://perpustakaan.unri.ac.id" class="text-white text-decoration-none">Perpustakaan</a></p>
+          <p><a href="https://lppm.unri.ac.id" class="text-white text-decoration-none">LPPM</a></p>
+          <p><a href="https://lppmp.unri.ac.id" class="text-white text-decoration-none">LPPMP</a></p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 text-white">
+            Layanan Online
+          </h6>
+          <p><a href="https://satu.unri.ac.id" class="text-white text-decoration-none">Satu Unri</a></p>
+          <p><a href="https://ejournal.unri.ac.id" class="text-white text-decoration-none">E-Jurnal</a></p>
+          <p><a href="https://selasi.unri.ac.id" class="text-white text-decoration-none">Selasi</a></p>
+          <p><a href="https://e-ppm.unri.ac.id" class="text-white text-decoration-none">E-PPM</a></p>
+          <p><a href="#!" class="text-white text-decoration-none">Insentif PPM</a></p>
+          <p><a href="https://mail.google.com/a/unri.ac.id" class="text-white text-decoration-none">Email</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 text-white">Contact</h6>
+          <p class="text-white"><i class="bi bi-geo-alt-fill me-3 text-white"></i> Kampus Bina Widya Km. 12,5 Simpang Baru, Pekanbaru</p>
+          <p class="text-white"><i class="bi bi-envelope-fill me-3 text-white"></i> ft@unri.ac.id</p>
+          <p class="text-white"><i class="bi bi-telephone-fill me-3 text-white"></i> (0761) 66596</p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
